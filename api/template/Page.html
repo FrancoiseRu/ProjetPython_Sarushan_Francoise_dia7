@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  </head>
+  <body>
+	<title> Facebook Comments </title>
+	<div class="containers">
+		<div class="row">
+		
+			<form action="http://127.0.0.1:5000/predict" method="POST">
+				<div class="col-md-9">
+					<div class= "form-group">
+						<label for="comments"> Popularity:</label>
+						<textarea class="form-control" rows="2" cols="35" id="query0" name="query0" autofocus>{{query0}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Number of views:</label>
+						<textarea class="form-control" rows="2" cols="35" id="query1" name="query1" autofocus>{{query1}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Daily interest:</label>
+						<textarea class="form-control" rows="2" cols="44" id="query2" name="query2" autofocus>{{query2}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Category (1-106):</label>
+						<textarea class="form-control" rows="2" cols="45" id="query3" name="query3" autofocus>{{query3}}</textarea>
+					</div>
+					<div class= "form-group">	
+						<label for="comments"> Nb of comments total CC1:</label>
+						<textarea class="form-control" rows="2" cols="40" id="query4" name="query4" autofocus>{{query4}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Nb of comments last day CC2:</label>
+						<textarea class="form-control" rows="2" cols="37" id="query5" name="query5" autofocus>{{query5}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Number of comments two days ago CC3:</label>
+						<textarea class="form-control" rows="2" cols="27" id="query6" name="query6" autofocus>{{query6}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Number of comments first day CC4:</label>
+						<textarea class="form-control" rows="2" cols="28" id="query7" name="query7" autofocus>{{query7}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Difference CC2-CC3:</label>
+						<textarea class="form-control" rows="2" cols="37" id="query8" name="query8" autofocus>{{query8}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Selected Time (0-72):</label>
+						<textarea class="form-control" rows="2" cols="33" id="query9" name="query9" autofocus>{{query9}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Number of characters:</label>
+						<textarea class="form-control" rows="2" cols="28" id="query10" name="query10" autofocus>{{query10}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Number of shares:</label>
+						<textarea class="form-control" rows="2" cols="28" id="query11" name="query11" autofocus>{{query11}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Hour H target simulation(1-24):</label>
+						<textarea class="form-control" rows="2" cols="19" id="query12" name="query12" autofocus>{{query12}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Day of publication(0-6):</label>
+						<textarea class="form-control" rows="2" cols="30" id="query13" name="query13" autofocus>{{query13}}</textarea>
+					</div>
+					<div class= "form-group">
+						<label for="comments"> Day selected time(0-6):</label>
+						<textarea class="form-control" rows="2" cols="35" id="query14" name="query14" autofocus>{{query14}}</textarea>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<button type="submit" class="btn btn-primary" name="submit" rows="20"> SUBMIT</button>
+				</div>
+			</form>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+			<textarea class="form-control" rows="2" cols="5" id="comment" name="query7" autofocus>{{output1}}</textarea>
+			</div>
+		</div>
+	</div>	
+  </body>
+</html>
